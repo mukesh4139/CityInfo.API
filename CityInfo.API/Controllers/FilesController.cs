@@ -25,7 +25,7 @@ namespace CityInfo.API.Controllers
             // demo code
             var pathToFile = "dental.pdf";
 
-            // check whether the file exists
+            // check whether the file exists 
             if (!System.IO.File.Exists(pathToFile))
             {
                 return NotFound();

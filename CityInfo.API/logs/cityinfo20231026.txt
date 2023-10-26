@@ -2663,3 +2663,13 @@ RETURNING 1;
 2023-10-26 18:13:08.985 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
 2023-10-26 18:13:08.988 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (3ms).
 2023-10-26 18:13:08.991 +05:30 [INF] Request finished HTTP/1.1 PUT https://localhost:7020/api/cities/1/pointsofinterest/1 application/json 69 - 204 - - 2588.0977ms
+2023-10-26 19:01:46.636 +05:30 [INF] Request starting HTTP/1.1 PATCH https://localhost:7020/api/cities/1/pointsofinterest/1 application/json 101
+2023-10-26 19:01:46.676 +05:30 [DBG] PATCH requests are not supported
+2023-10-26 19:01:46.677 +05:30 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2023-10-26 19:01:46.678 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-10-26 19:01:46.679 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-10-26 19:01:46.680 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-10-26 19:01:46.681 +05:30 [DBG] Connection id "0HMUM44AE6M3J" completed keep alive response.
+2023-10-26 19:01:46.682 +05:30 [INF] Request finished HTTP/1.1 PATCH https://localhost:7020/api/cities/1/pointsofinterest/1 application/json 101 - 405 0 - 46.0974ms
+2023-10-26 19:01:46.683 +05:30 [DBG] Connection id "0HMUM44AE6M3J", Request id "0HMUM44AE6M3J:00000003": started reading request body.
+2023-10-26 19:01:46.684 +05:30 [DBG] Connection id "0HMUM44AE6M3J", Request id "0HMUM44AE6M3J:00000003": done reading request body.

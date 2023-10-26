@@ -943,3 +943,11 @@ ORDER BY "c"."Name"
 2023-10-26 16:23:51.481 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
 2023-10-26 16:23:51.482 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
 2023-10-26 16:23:51.484 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7020/api/cities - - - 200 215 application/json;+charset=utf-8 760.6036ms
+2023-10-26 16:25:59.382 +05:30 [DBG] Connection id "0HMUM27ACNNTU" is closing.
+2023-10-26 16:25:59.384 +05:30 [DBG] Connection id "0HMUM27ACNNTU" is closed. The last processed stream ID was 7.
+2023-10-26 16:25:59.386 +05:30 [DBG] Connection id "0HMUM27ACNNTU" received FIN.
+2023-10-26 16:25:59.386 +05:30 [DBG] Connection id "0HMUM27ACNNTU" stopped.
+2023-10-26 16:25:59.388 +05:30 [DBG] Connection id "0HMUM27ACNNTU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-26 16:26:02.414 +05:30 [DBG] Connection id "0HMUM27ACNNU0" disconnecting.
+2023-10-26 16:26:02.416 +05:30 [DBG] Connection id "0HMUM27ACNNU0" stopped.
+2023-10-26 16:26:02.417 +05:30 [DBG] Connection id "0HMUM27ACNNU0" sending FIN because: "The Socket transport's send loop completed gracefully."

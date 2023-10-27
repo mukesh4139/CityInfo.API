@@ -2611,3 +2611,62 @@ RETURNING "Id";
 2023-10-27 11:57:39.013 +05:30 [DBG] Authentication of the HTTPS connection timed out.
 2023-10-27 11:57:39.015 +05:30 [DBG] Connection id "0HMUMMN5FOP74" stopped.
 2023-10-27 11:57:39.016 +05:30 [DBG] Connection id "0HMUMMN5FOP74" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-27 12:56:33.936 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-27 12:56:34.028 +05:30 [DBG] Hosting starting
+2023-10-27 12:56:34.052 +05:30 [INF] User profile is available. Using 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-27 12:56:34.055 +05:30 [DBG] Reading data from file 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys\key-ee440bbc-5af2-4894-b53b-dece72ad9a64.xml'.
+2023-10-27 12:56:34.069 +05:30 [DBG] Found key {ee440bbc-5af2-4894-b53b-dece72ad9a64}.
+2023-10-27 12:56:34.076 +05:30 [DBG] Considering key {ee440bbc-5af2-4894-b53b-dece72ad9a64} with expiration date 2024-01-09 06:54:19Z as default key.
+2023-10-27 12:56:34.078 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-27 12:56:34.081 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2023-10-27 12:56:34.083 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-27 12:56:34.087 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-10-27 12:56:34.089 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-10-27 12:56:34.091 +05:30 [DBG] Using key {ee440bbc-5af2-4894-b53b-dece72ad9a64} as the default key.
+2023-10-27 12:56:34.092 +05:30 [DBG] Key ring with default key {ee440bbc-5af2-4894-b53b-dece72ad9a64} was loaded during application startup.
+2023-10-27 12:56:34.185 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D3BAFE63275228DC0207BE94059AF27C42476A)
+2023-10-27 12:56:34.225 +05:30 [INF] Now listening on: https://localhost:7020
+2023-10-27 12:56:34.226 +05:30 [INF] Now listening on: http://localhost:5050
+2023-10-27 12:56:34.227 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-10-27 12:56:34.228 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-27 12:56:34.228 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-27 12:56:34.229 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 12:56:34.230 +05:30 [INF] Hosting environment: Development
+2023-10-27 12:56:34.231 +05:30 [INF] Content root path: C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\
+2023-10-27 12:56:34.231 +05:30 [DBG] Hosting started
+2023-10-27 12:56:34.343 +05:30 [DBG] Connection id "0HMUMNO66IHEQ" accepted.
+2023-10-27 12:56:34.343 +05:30 [DBG] Connection id "0HMUMNO66IHER" accepted.
+2023-10-27 12:56:34.344 +05:30 [DBG] Connection id "0HMUMNO66IHEQ" started.
+2023-10-27 12:56:34.345 +05:30 [DBG] Connection id "0HMUMNO66IHER" started.
+2023-10-27 12:56:34.367 +05:30 [DBG] Connection id "0HMUMNO66IHEQ" received FIN.
+2023-10-27 12:56:34.367 +05:30 [DBG] Connection id "0HMUMNO66IHER" received FIN.
+2023-10-27 12:56:34.378 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-27 12:56:34.378 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-27 12:56:34.402 +05:30 [DBG] Connection id "0HMUMNO66IHEQ" stopped.
+2023-10-27 12:56:34.402 +05:30 [DBG] Connection id "0HMUMNO66IHER" stopped.
+2023-10-27 12:56:34.404 +05:30 [DBG] Connection id "0HMUMNO66IHEQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-27 12:56:34.404 +05:30 [DBG] Connection id "0HMUMNO66IHER" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-27 12:56:34.561 +05:30 [DBG] Connection id "0HMUMNO66IHES" accepted.
+2023-10-27 12:56:34.562 +05:30 [DBG] Connection id "0HMUMNO66IHES" started.
+2023-10-27 12:56:34.587 +05:30 [DBG] Connection 0HMUMNO66IHES established using the following protocol: "Tls13"
+2023-10-27 12:56:34.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/index.html - -
+2023-10-27 12:56:34.635 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-27 12:56:34.818 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-27 12:56:34.911 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-27 12:56:34.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - -
+2023-10-27 12:56:34.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/index.html - - - 200 - text/html;charset=utf-8 302.2701ms
+2023-10-27 12:56:34.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - - - 200 12356 application/javascript;+charset=utf-8 3.3658ms
+2023-10-27 12:56:34.921 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_vs/browserLink - -
+2023-10-27 12:56:34.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.4259ms
+2023-10-27 12:56:34.971 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - -
+2023-10-27 12:56:35.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.7151ms

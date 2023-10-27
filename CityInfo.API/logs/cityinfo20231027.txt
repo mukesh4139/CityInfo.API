@@ -2564,3 +2564,50 @@ RETURNING "Id";
 2023-10-27 11:24:00.708 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
 2023-10-27 11:24:00.709 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
 2023-10-27 11:24:00.711 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7020/api/cities/3/pointsofinterest application/json 53 - 201 45 application/json;+charset=utf-8 195.5953ms
+2023-10-27 11:57:28.213 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-27 11:57:28.303 +05:30 [DBG] Hosting starting
+2023-10-27 11:57:28.330 +05:30 [INF] User profile is available. Using 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-27 11:57:28.333 +05:30 [DBG] Reading data from file 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys\key-ee440bbc-5af2-4894-b53b-dece72ad9a64.xml'.
+2023-10-27 11:57:28.346 +05:30 [DBG] Found key {ee440bbc-5af2-4894-b53b-dece72ad9a64}.
+2023-10-27 11:57:28.354 +05:30 [DBG] Considering key {ee440bbc-5af2-4894-b53b-dece72ad9a64} with expiration date 2024-01-09 06:54:19Z as default key.
+2023-10-27 11:57:28.356 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-27 11:57:28.359 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2023-10-27 11:57:28.361 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-27 11:57:28.365 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-10-27 11:57:28.368 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-10-27 11:57:28.370 +05:30 [DBG] Using key {ee440bbc-5af2-4894-b53b-dece72ad9a64} as the default key.
+2023-10-27 11:57:28.371 +05:30 [DBG] Key ring with default key {ee440bbc-5af2-4894-b53b-dece72ad9a64} was loaded during application startup.
+2023-10-27 11:57:28.490 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D3BAFE63275228DC0207BE94059AF27C42476A)
+2023-10-27 11:57:28.527 +05:30 [INF] Now listening on: https://localhost:7020
+2023-10-27 11:57:28.528 +05:30 [INF] Now listening on: http://localhost:5050
+2023-10-27 11:57:28.529 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-10-27 11:57:28.530 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-27 11:57:28.531 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-27 11:57:28.532 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 11:57:28.532 +05:30 [INF] Hosting environment: Development
+2023-10-27 11:57:28.533 +05:30 [INF] Content root path: C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\
+2023-10-27 11:57:28.534 +05:30 [DBG] Hosting started
+2023-10-27 11:57:28.604 +05:30 [DBG] Connection id "0HMUMMN5FOP72" accepted.
+2023-10-27 11:57:28.606 +05:30 [DBG] Connection id "0HMUMMN5FOP72" started.
+2023-10-27 11:57:28.860 +05:30 [DBG] Connection id "0HMUMMN5FOP73" accepted.
+2023-10-27 11:57:28.861 +05:30 [DBG] Connection id "0HMUMMN5FOP73" started.
+2023-10-27 11:57:28.894 +05:30 [DBG] Connection 0HMUMMN5FOP73 established using the following protocol: "Tls13"
+2023-10-27 11:57:28.926 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/index.html - -
+2023-10-27 11:57:28.947 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-27 11:57:28.991 +05:30 [DBG] Connection id "0HMUMMN5FOP74" accepted.
+2023-10-27 11:57:28.993 +05:30 [DBG] Connection id "0HMUMMN5FOP74" started.
+2023-10-27 11:57:29.098 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-27 11:57:29.217 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-27 11:57:29.221 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/index.html - - - 200 - text/html;charset=utf-8 298.6863ms
+2023-10-27 11:57:29.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - -
+2023-10-27 11:57:29.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - - - 200 12356 application/javascript;+charset=utf-8 4.4159ms
+2023-10-27 11:57:29.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_vs/browserLink - -
+2023-10-27 11:57:29.264 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.6696ms
+2023-10-27 11:57:29.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - -
+2023-10-27 11:57:29.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.4235ms
+2023-10-27 11:57:38.614 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2023-10-27 11:57:38.617 +05:30 [DBG] Connection id "0HMUMMN5FOP72" stopped.
+2023-10-27 11:57:38.619 +05:30 [DBG] Connection id "0HMUMMN5FOP72" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-27 11:57:39.013 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2023-10-27 11:57:39.015 +05:30 [DBG] Connection id "0HMUMMN5FOP74" stopped.
+2023-10-27 11:57:39.016 +05:30 [DBG] Connection id "0HMUMMN5FOP74" sending FIN because: "The Socket transport's send loop completed gracefully."

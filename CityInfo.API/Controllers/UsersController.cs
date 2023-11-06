@@ -34,13 +34,14 @@ namespace CityInfo.API.Controllers
             var userExists = _userRepository.UserExistsAsync(userDto.Email);
             _logger.LogInformation($"User Already exists? {userExists.Result}");
 
-            if (userExists.Result == true)
-            {
-                return BadRequest("User already registered");
-            } else
-            {
-                _userRepository.AddUserAsync(finalUser);
-            }
+            //if (userExists.Result == true)
+            //{
+            //    return BadRequest("User already registered");
+            //} else
+            //{
+            //    _userRepository.AddUserAsync(finalUser);
+            //}
+            _userRepository.AddUserAsync(finalUser);
 
             return Ok("Sign up request was successful");
         }

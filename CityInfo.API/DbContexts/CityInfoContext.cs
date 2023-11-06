@@ -23,6 +23,10 @@ namespace CityInfo.API.DbContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+
             modelBuilder.Entity<City>().HasData(
                 new City("New York City")
                 {

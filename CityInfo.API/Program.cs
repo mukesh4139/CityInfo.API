@@ -70,6 +70,7 @@ builder.Services.AddDbContext<CityInfoContext>(
         builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
 builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

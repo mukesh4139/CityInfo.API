@@ -9,5 +9,7 @@ namespace CityInfo.API.Services
         public Task<bool> UserExistsAsync(string email);
 
         public Task<User?> GetUserByIdAsync(int id);
+
+        public Task<User?> ValidateUserAsync(string userName, string password);
     }
 }

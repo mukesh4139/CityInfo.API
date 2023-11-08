@@ -2243,3 +2243,683 @@ VALUES ('20231106082545_AddUniqueConstraintOnUserEmail', '7.0.13');
 2023-11-06 13:56:46.514 +05:30 [DBG] 'CityInfoContext' disposed.
 2023-11-06 13:56:46.514 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
 2023-11-06 13:56:46.514 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 13:57:01.926 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-06 13:57:02.107 +05:30 [DBG] Hosting starting
+2023-11-06 13:57:02.134 +05:30 [INF] User profile is available. Using 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-06 13:57:02.137 +05:30 [DBG] Reading data from file 'C:\Users\muchaudhary\AppData\Local\ASP.NET\DataProtection-Keys\key-ee440bbc-5af2-4894-b53b-dece72ad9a64.xml'.
+2023-11-06 13:57:02.144 +05:30 [DBG] Found key {ee440bbc-5af2-4894-b53b-dece72ad9a64}.
+2023-11-06 13:57:02.152 +05:30 [DBG] Considering key {ee440bbc-5af2-4894-b53b-dece72ad9a64} with expiration date 2024-01-09 06:54:19Z as default key.
+2023-11-06 13:57:02.154 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-06 13:57:02.158 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2023-11-06 13:57:02.160 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-06 13:57:02.164 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-11-06 13:57:02.167 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-11-06 13:57:02.169 +05:30 [DBG] Using key {ee440bbc-5af2-4894-b53b-dece72ad9a64} as the default key.
+2023-11-06 13:57:02.170 +05:30 [DBG] Key ring with default key {ee440bbc-5af2-4894-b53b-dece72ad9a64} was loaded during application startup.
+2023-11-06 13:57:02.262 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D3BAFE63275228DC0207BE94059AF27C42476A)
+2023-11-06 13:57:02.303 +05:30 [INF] Now listening on: https://localhost:7020
+2023-11-06 13:57:02.304 +05:30 [INF] Now listening on: http://localhost:5050
+2023-11-06 13:57:02.305 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-11-06 13:57:02.306 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-06 13:57:02.307 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-06 13:57:02.308 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 13:57:02.309 +05:30 [INF] Hosting environment: Development
+2023-11-06 13:57:02.310 +05:30 [INF] Content root path: C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\
+2023-11-06 13:57:02.310 +05:30 [DBG] Hosting started
+2023-11-06 13:57:02.351 +05:30 [DBG] Connection id "0HMUUK8JG1MV4" accepted.
+2023-11-06 13:57:02.351 +05:30 [DBG] Connection id "0HMUUK8JG1MV5" accepted.
+2023-11-06 13:57:02.352 +05:30 [DBG] Connection id "0HMUUK8JG1MV4" started.
+2023-11-06 13:57:02.353 +05:30 [DBG] Connection id "0HMUUK8JG1MV5" started.
+2023-11-06 13:57:02.362 +05:30 [DBG] Connection id "0HMUUK8JG1MV5" received FIN.
+2023-11-06 13:57:02.362 +05:30 [DBG] Connection id "0HMUUK8JG1MV4" received FIN.
+2023-11-06 13:57:02.366 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-11-06 13:57:02.366 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-11-06 13:57:02.391 +05:30 [DBG] Connection id "0HMUUK8JG1MV4" stopped.
+2023-11-06 13:57:02.391 +05:30 [DBG] Connection id "0HMUUK8JG1MV5" stopped.
+2023-11-06 13:57:02.393 +05:30 [DBG] Connection id "0HMUUK8JG1MV5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-06 13:57:02.393 +05:30 [DBG] Connection id "0HMUUK8JG1MV4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-06 13:57:02.713 +05:30 [DBG] Connection id "0HMUUK8JG1MV6" accepted.
+2023-11-06 13:57:02.714 +05:30 [DBG] Connection id "0HMUUK8JG1MV6" started.
+2023-11-06 13:57:02.737 +05:30 [DBG] Connection 0HMUUK8JG1MV6 established using the following protocol: "Tls13"
+2023-11-06 13:57:02.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/index.html - -
+2023-11-06 13:57:02.787 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-11-06 13:57:02.942 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-11-06 13:57:03.041 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2023-11-06 13:57:03.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - -
+2023-11-06 13:57:03.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/index.html - - - 200 - text/html;charset=utf-8 281.9080ms
+2023-11-06 13:57:03.048 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_framework/aspnetcore-browser-refresh.js - - - 200 12356 application/javascript;+charset=utf-8 3.3423ms
+2023-11-06 13:57:03.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/_vs/browserLink - -
+2023-11-06 13:57:03.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9556ms
+2023-11-06 13:57:03.174 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - -
+2023-11-06 13:57:03.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7020/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.2560ms
+2023-11-06 13:57:05.817 +05:30 [DBG] Connection id "0HMUUK8JG1MV7" accepted.
+2023-11-06 13:57:05.817 +05:30 [DBG] Connection id "0HMUUK8JG1MV7" received FIN.
+2023-11-06 13:57:05.818 +05:30 [DBG] Connection id "0HMUUK8JG1MV7" started.
+2023-11-06 13:57:05.818 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" accepted.
+2023-11-06 13:57:05.820 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-11-06 13:57:05.821 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" started.
+2023-11-06 13:57:05.822 +05:30 [DBG] Connection id "0HMUUK8JG1MV7" stopped.
+2023-11-06 13:57:05.824 +05:30 [DBG] Connection id "0HMUUK8JG1MV7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-06 13:57:05.829 +05:30 [DBG] Connection 0HMUUK8JG1MV8 established using the following protocol: "Tls13"
+2023-11-06 13:57:05.834 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100
+2023-11-06 13:57:05.836 +05:30 [DBG] POST requests are not supported
+2023-11-06 13:57:05.852 +05:30 [DBG] 1 candidate(s) found for the request path '/api/v1/users/signup'
+2023-11-06 13:57:05.859 +05:30 [DBG] Endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)' with route pattern 'api/v{version:apiVersion}/users/signup' is valid for the request path '/api/v1/users/signup'
+2023-11-06 13:57:05.864 +05:30 [DBG] Request matched endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:05.906 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-11-06 13:57:05.909 +05:30 [INF] Executing endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:05.930 +05:30 [INF] Route matched with {action = "UserSignup", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserSignup(CityInfo.API.Models.UserDto) on controller CityInfo.API.Controllers.UsersController (CityInfo.API).
+2023-11-06 13:57:05.933 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-11-06 13:57:05.934 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-11-06 13:57:05.935 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:05.936 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-11-06 13:57:05.937 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:05.938 +05:30 [DBG] Executing controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:06.119 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-06 13:57:06.135 +05:30 [DBG] Executed controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:06.139 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:06.142 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' using the name '' in request data ...
+2023-11-06 13:57:06.143 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:06.144 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:06.149 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000002": started reading request body.
+2023-11-06 13:57:06.150 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000002": done reading request body.
+2023-11-06 13:57:06.224 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:06.226 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:06.227 +05:30 [DBG] Attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:06.232 +05:30 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:06.278 +05:30 [INF] Executing action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) - Validation state: "Valid"
+2023-11-06 13:57:06.859 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 13:57:06.891 +05:30 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any(u => u.Email == __email_0)'
+2023-11-06 13:57:07.073 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u
+                WHERE u.Email == @__email_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        CityInfo.API.DbContexts.CityInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-11-06 13:57:07.109 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:07.113 +05:30 [DBG] Creating DbConnection.
+2023-11-06 13:57:07.128 +05:30 [DBG] Created DbConnection. (12ms).
+2023-11-06 13:57:07.135 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (23ms).
+2023-11-06 13:57:07.139 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (30ms).
+2023-11-06 13:57:07.147 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:07.158 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:07.169 +05:30 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:07.194 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:07.206 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:07.213 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 10ms reading results.
+2023-11-06 13:57:07.219 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:07.223 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (4ms).
+2023-11-06 13:57:07.225 +05:30 [INF] User Already exists? True
+2023-11-06 13:57:07.245 +05:30 [DBG] 'CityInfoContext' generated a temporary value for the property 'Id.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:07.272 +05:30 [DBG] Context 'CityInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:07.280 +05:30 [DBG] SaveChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:07.282 +05:30 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:07.289 +05:30 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-11-06 13:57:07.336 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:07.338 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:07.341 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:07.342 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-11-06 13:57:07.343 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-11-06 13:57:07.344 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:07.350 +05:30 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:07.355 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:07.357 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:07.362 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CityInfo.API.DbContexts.CityInfoContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-11-06 13:57:07.418 +05:30 [INF] Executed action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1134.7148ms.
+2023-11-06 13:57:07.422 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-11-06 13:57:07.427 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-11-06 13:57:07.428 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-06 13:57:07.428 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-06 13:57:07.429 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-11-06 13:57:07.430 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-11-06 13:57:07.438 +05:30 [INF] Executed action CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) in 1496.8177ms
+2023-11-06 13:57:07.440 +05:30 [INF] Executed endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:07.441 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" completed keep alive response.
+2023-11-06 13:57:07.445 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 13:57:07.451 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:07.453 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (2ms).
+2023-11-06 13:57:07.454 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100 - 200 - text/plain;+charset=utf-8 1620.1980ms
+2023-11-06 13:57:09.580 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100
+2023-11-06 13:57:09.581 +05:30 [DBG] POST requests are not supported
+2023-11-06 13:57:09.583 +05:30 [DBG] 1 candidate(s) found for the request path '/api/v1/users/signup'
+2023-11-06 13:57:09.584 +05:30 [DBG] Endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)' with route pattern 'api/v{version:apiVersion}/users/signup' is valid for the request path '/api/v1/users/signup'
+2023-11-06 13:57:09.586 +05:30 [DBG] Request matched endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:09.587 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-11-06 13:57:09.589 +05:30 [INF] Executing endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:09.591 +05:30 [INF] Route matched with {action = "UserSignup", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserSignup(CityInfo.API.Models.UserDto) on controller CityInfo.API.Controllers.UsersController (CityInfo.API).
+2023-11-06 13:57:09.593 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-11-06 13:57:09.594 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-11-06 13:57:09.596 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:09.598 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-11-06 13:57:09.599 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:09.601 +05:30 [DBG] Executing controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:09.602 +05:30 [DBG] Executed controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:09.604 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:09.606 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' using the name '' in request data ...
+2023-11-06 13:57:09.608 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:09.609 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:09.611 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000003": started reading request body.
+2023-11-06 13:57:09.612 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000003": done reading request body.
+2023-11-06 13:57:09.613 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:09.614 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:09.616 +05:30 [DBG] Attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:09.617 +05:30 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:09.643 +05:30 [INF] Executing action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) - Validation state: "Valid"
+2023-11-06 13:57:09.662 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 13:57:09.668 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:09.669 +05:30 [DBG] Creating DbConnection.
+2023-11-06 13:57:09.670 +05:30 [DBG] Created DbConnection. (0ms).
+2023-11-06 13:57:09.671 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-11-06 13:57:09.672 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-11-06 13:57:09.673 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:09.674 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:09.676 +05:30 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:09.677 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:09.679 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:09.681 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-11-06 13:57:09.682 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:09.684 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:09.686 +05:30 [INF] User Already exists? True
+2023-11-06 13:57:09.686 +05:30 [DBG] 'CityInfoContext' generated a temporary value for the property 'Id.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:09.688 +05:30 [DBG] Context 'CityInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:09.690 +05:30 [DBG] SaveChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:09.691 +05:30 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:09.692 +05:30 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-11-06 13:57:09.693 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:09.694 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:09.696 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:09.697 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-11-06 13:57:09.698 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-11-06 13:57:09.700 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:09.702 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:09.705 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:09.706 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:09.710 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CityInfo.API.DbContexts.CityInfoContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-11-06 13:57:09.755 +05:30 [INF] Executed action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 110.5842ms.
+2023-11-06 13:57:09.759 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-11-06 13:57:09.761 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-11-06 13:57:09.762 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-06 13:57:09.763 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-06 13:57:09.763 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-11-06 13:57:09.764 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-11-06 13:57:09.766 +05:30 [INF] Executed action CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) in 165.154ms
+2023-11-06 13:57:09.767 +05:30 [INF] Executed endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:09.768 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" completed keep alive response.
+2023-11-06 13:57:09.769 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 13:57:09.770 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:09.771 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:09.772 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100 - 200 - text/plain;+charset=utf-8 192.4627ms
+2023-11-06 13:57:10.945 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100
+2023-11-06 13:57:10.946 +05:30 [DBG] POST requests are not supported
+2023-11-06 13:57:10.948 +05:30 [DBG] 1 candidate(s) found for the request path '/api/v1/users/signup'
+2023-11-06 13:57:10.949 +05:30 [DBG] Endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)' with route pattern 'api/v{version:apiVersion}/users/signup' is valid for the request path '/api/v1/users/signup'
+2023-11-06 13:57:10.950 +05:30 [DBG] Request matched endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:10.953 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-11-06 13:57:10.954 +05:30 [INF] Executing endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:10.955 +05:30 [INF] Route matched with {action = "UserSignup", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserSignup(CityInfo.API.Models.UserDto) on controller CityInfo.API.Controllers.UsersController (CityInfo.API).
+2023-11-06 13:57:10.957 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-11-06 13:57:10.959 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-11-06 13:57:10.960 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:10.962 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-11-06 13:57:10.964 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:10.965 +05:30 [DBG] Executing controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:10.968 +05:30 [DBG] Executed controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:10.969 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:10.971 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' using the name '' in request data ...
+2023-11-06 13:57:10.974 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:10.975 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:10.976 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000004": started reading request body.
+2023-11-06 13:57:10.978 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000004": done reading request body.
+2023-11-06 13:57:10.979 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:10.980 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:10.981 +05:30 [DBG] Attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:10.982 +05:30 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:11.001 +05:30 [INF] Executing action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) - Validation state: "Valid"
+2023-11-06 13:57:11.048 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 13:57:11.052 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:11.054 +05:30 [DBG] Creating DbConnection.
+2023-11-06 13:57:11.055 +05:30 [DBG] Created DbConnection. (1ms).
+2023-11-06 13:57:11.056 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2023-11-06 13:57:11.057 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-11-06 13:57:11.058 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:11.060 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:11.061 +05:30 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:11.063 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:11.065 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:11.066 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-11-06 13:57:11.068 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:11.069 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:11.070 +05:30 [INF] User Already exists? True
+2023-11-06 13:57:11.071 +05:30 [DBG] 'CityInfoContext' generated a temporary value for the property 'Id.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:11.072 +05:30 [DBG] Context 'CityInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:11.074 +05:30 [DBG] SaveChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:11.075 +05:30 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:11.075 +05:30 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-11-06 13:57:11.076 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:11.078 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:11.079 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:11.080 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-06 13:57:11.081 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-11-06 13:57:11.082 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:11.084 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:11.087 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:11.088 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:11.091 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CityInfo.API.DbContexts.CityInfoContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-11-06 13:57:11.137 +05:30 [INF] Executed action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 133.99ms.
+2023-11-06 13:57:11.139 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-11-06 13:57:11.141 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-11-06 13:57:11.142 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-06 13:57:11.142 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-06 13:57:11.143 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-11-06 13:57:11.144 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-11-06 13:57:11.145 +05:30 [INF] Executed action CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) in 180.2523ms
+2023-11-06 13:57:11.146 +05:30 [INF] Executed endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:11.147 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" completed keep alive response.
+2023-11-06 13:57:11.148 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 13:57:11.149 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:11.150 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:11.151 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100 - 200 - text/plain;+charset=utf-8 206.1720ms
+2023-11-06 13:57:12.461 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100
+2023-11-06 13:57:12.463 +05:30 [DBG] POST requests are not supported
+2023-11-06 13:57:12.464 +05:30 [DBG] 1 candidate(s) found for the request path '/api/v1/users/signup'
+2023-11-06 13:57:12.465 +05:30 [DBG] Endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)' with route pattern 'api/v{version:apiVersion}/users/signup' is valid for the request path '/api/v1/users/signup'
+2023-11-06 13:57:12.466 +05:30 [DBG] Request matched endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:12.467 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-11-06 13:57:12.468 +05:30 [INF] Executing endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:12.469 +05:30 [INF] Route matched with {action = "UserSignup", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserSignup(CityInfo.API.Models.UserDto) on controller CityInfo.API.Controllers.UsersController (CityInfo.API).
+2023-11-06 13:57:12.471 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-11-06 13:57:12.474 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-11-06 13:57:12.475 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:12.477 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-11-06 13:57:12.478 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-11-06 13:57:12.480 +05:30 [DBG] Executing controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:12.481 +05:30 [DBG] Executed controller factory for controller CityInfo.API.Controllers.UsersController (CityInfo.API)
+2023-11-06 13:57:12.482 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:12.483 +05:30 [DBG] Attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto' using the name '' in request data ...
+2023-11-06 13:57:12.485 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:12.486 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-11-06 13:57:12.487 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000005": started reading request body.
+2023-11-06 13:57:12.488 +05:30 [DBG] Connection id "0HMUUK8JG1MV8", Request id "0HMUUK8JG1MV8:00000005": done reading request body.
+2023-11-06 13:57:12.490 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:12.491 +05:30 [DBG] Done attempting to bind parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:12.493 +05:30 [DBG] Attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto' ...
+2023-11-06 13:57:12.494 +05:30 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'CityInfo.API.Models.UserDto'.
+2023-11-06 13:57:12.513 +05:30 [INF] Executing action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) - Validation state: "Valid"
+2023-11-06 13:57:12.514 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 13:57:12.516 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:12.517 +05:30 [DBG] Creating DbConnection.
+2023-11-06 13:57:12.518 +05:30 [DBG] Created DbConnection. (0ms).
+2023-11-06 13:57:12.519 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-11-06 13:57:12.521 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-11-06 13:57:12.523 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:12.525 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:12.527 +05:30 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:12.529 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2023-11-06 13:57:12.531 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:12.532 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-11-06 13:57:12.533 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:12.535 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:12.536 +05:30 [INF] User Already exists? True
+2023-11-06 13:57:12.537 +05:30 [DBG] 'CityInfoContext' generated a temporary value for the property 'Id.User'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:12.539 +05:30 [DBG] Context 'CityInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-06 13:57:12.540 +05:30 [DBG] SaveChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:12.541 +05:30 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-11-06 13:57:12.542 +05:30 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-11-06 13:57:12.543 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:12.545 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:12.546 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 13:57:12.547 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-06 13:57:12.548 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-11-06 13:57:12.549 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:12.551 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 6), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2023-11-06 13:57:12.554 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 13:57:12.555 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:12.558 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CityInfo.API.DbContexts.CityInfoContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Email'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-11-06 13:57:12.604 +05:30 [INF] Executed action method CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 89.9072ms.
+2023-11-06 13:57:12.608 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-11-06 13:57:12.610 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-11-06 13:57:12.611 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-06 13:57:12.611 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-06 13:57:12.612 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-11-06 13:57:12.613 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-11-06 13:57:12.615 +05:30 [INF] Executed action CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API) in 134.8277ms
+2023-11-06 13:57:12.616 +05:30 [INF] Executed endpoint 'CityInfo.API.Controllers.UsersController.UserSignup (CityInfo.API)'
+2023-11-06 13:57:12.617 +05:30 [DBG] Connection id "0HMUUK8JG1MV8" completed keep alive response.
+2023-11-06 13:57:12.617 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 13:57:12.618 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 13:57:12.619 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-11-06 13:57:12.621 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7020/api/v1/users/signup application/json 100 - 200 - text/plain;+charset=utf-8 159.8073ms
+2023-11-06 14:35:34.938 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-06 14:35:35.671 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 14:35:35.853 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 14:35:46.702 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-06 14:35:47.470 +05:30 [DBG] Entity Framework Core 7.0.13 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.13' with options: None
+2023-11-06 14:35:47.481 +05:30 [DBG] Creating DbConnection.
+2023-11-06 14:35:47.497 +05:30 [DBG] Created DbConnection. (13ms).
+2023-11-06 14:35:47.502 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.505 +05:30 [DBG] Creating DbConnection.
+2023-11-06 14:35:47.505 +05:30 [DBG] Created DbConnection. (0ms).
+2023-11-06 14:35:47.506 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.513 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.516 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.521 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 14:35:47.529 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-11-06 14:35:47.533 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (4ms).
+2023-11-06 14:35:47.534 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2023-11-06 14:35:47.534 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.538 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.546 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-06 14:35:47.568 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-06 14:35:47.570 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.572 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (2ms).
+2023-11-06 14:35:47.573 +05:30 [DBG] Creating DbConnection.
+2023-11-06 14:35:47.573 +05:30 [DBG] Created DbConnection. (0ms).
+2023-11-06 14:35:47.573 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 14:35:47.574 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-11-06 14:35:47.574 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-11-06 14:35:47.574 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-06 14:35:47.574 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-06 14:35:47.574 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.574 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 14:35:47.582 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-11-06 14:35:47.582 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-06 14:35:47.582 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-11-06 14:35:47.582 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.582 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.582 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-06 14:35:47.583 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-06 14:35:47.585 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.586 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2023-11-06 14:35:47.586 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.586 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 14:35:47.594 +05:30 [INF] Applying migration '20231106090535_AddPosts'.
+2023-11-06 14:35:47.628 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:47.628 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:47.629 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-11-06 14:35:47.631 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2023-11-06 14:35:47.632 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-11-06 14:35:47.632 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:47.632 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:47.633 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Posts" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Posts" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "UserId" INTEGER NOT NULL,
+    CONSTRAINT "FK_Posts_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2023-11-06 14:35:48.118 +05:30 [INF] Executed DbCommand (485ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Posts" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Posts" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "UserId" INTEGER NOT NULL,
+    CONSTRAINT "FK_Posts_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2023-11-06 14:35:48.118 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-11-06 14:35:48.118 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:48.118 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:48.118 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Posts_UserId" ON "Posts" ("UserId");
+2023-11-06 14:35:48.119 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Posts_UserId" ON "Posts" ("UserId");
+2023-11-06 14:35:48.119 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-11-06 14:35:48.119 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:48.119 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-11-06 14:35:48.119 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231106090535_AddPosts', '7.0.13');
+2023-11-06 14:35:48.119 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231106090535_AddPosts', '7.0.13');
+2023-11-06 14:35:48.120 +05:30 [DBG] Committing transaction.
+2023-11-06 14:35:48.125 +05:30 [DBG] Committed transaction.
+2023-11-06 14:35:48.125 +05:30 [DBG] Disposing transaction.
+2023-11-06 14:35:48.125 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\muchaudhary\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2023-11-06 14:35:48.126 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-11-06 14:35:48.126 +05:30 [DBG] 'CityInfoContext' disposed.
+2023-11-06 14:35:48.127 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-11-06 14:35:48.127 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).

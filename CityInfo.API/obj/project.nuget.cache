@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aOxgSP6gBBM1FQlV9ABo3WrH0dxSAa4/Z7RIriP197I5FahP53oo6U2aHd4TDO8mbSb4GZQ3jp8Los52DGaTKw==",
+  "dgSpecHash": "q2s7g/JXfvn1VjwVKzswWTqQnqcvWvbBUPGI4WVvjtYtBT2LKYI20JmK3k4ArAk4Cf9yGWUKh1MfmIXfPs71kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\muchaudhary\\source\\repos\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muchaudhary\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\muchaudhary\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\muchaudhary\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\muchaudhary\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\muchaudhary\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\muchaudhary\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.12\\microsoft.aspnetcore.jsonpatch.7.0.12.nupkg.sha512",

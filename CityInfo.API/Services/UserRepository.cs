@@ -37,5 +37,23 @@ namespace CityInfo.API.Services
         {
             return await _context.Users.Where(u => u.Id == userId).FirstOrDefaultAsync();
         }
+
+        public async Task<User?> ValidateUserAsync(string userName, string password)
+        {
+            var user = await _context.Users.Where(u => u.Email == userName).FirstOrDefaultAsync();
+
+            if (user == null)
+            {
+                throw new ArgumentException("Invalid User credentials");
+            }
+
+            bool verified =  BCrypt.Net.BCrypt.Verify(password, user.EncryptedPassword);
+            if (!verified)
+            {
+                throw new ArgumentException("Invalid User credentials");
+            }
+
+            return user;
+        }
     }
 }

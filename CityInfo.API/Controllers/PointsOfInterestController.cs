@@ -5,11 +5,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using CityInfo.API.Helpers;
 
 namespace CityInfo.API.Controllers
 {
     [Route("api/v{version:apiVersion}/cities/{cityId}/pointsofinterest")]
-    [Authorize(Policy = "MustBeFromAntwerp")]
+    [Authorize]
     [ApiVersion("2.0")]
     [ApiController]
     public class PointsOfInterestController : ControllerBase
@@ -40,6 +41,7 @@ namespace CityInfo.API.Controllers
             //{
             //    return Forbid(); 
             //}
+            _logger.LogInformation($"{User.GetCurrentUserId()}");
 
             if (!await _cityInfoRepository.CityExistsAsync(cityId))
             {
@@ -47,6 +49,7 @@ namespace CityInfo.API.Controllers
                     $"City with id {cityId} wasn't found when accessing points of interest");
                 return NotFound();
             }
+
 
             var pointsOfInterestForCity = await _cityInfoRepository
                  .GetPointsOfInterestForCityAsync(cityId);

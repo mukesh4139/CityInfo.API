@@ -19,5 +19,14 @@ namespace CityInfo.API.Entities
 
         [StringLength(50)]
         public string LastName { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string City { get; set; }
+
+        [Required]
+        public string EncryptedPassword { get; set; }
+        
+        public ICollection<Post> Posts { get; set; } = new List<Post>();
     }
 }

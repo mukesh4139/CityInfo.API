@@ -1,6 +1,7 @@
 ﻿using CityInfo.API.DbContexts;
 using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
+using BCrypt.Net;
 
 namespace CityInfo.API.Services
 {
@@ -20,6 +21,8 @@ namespace CityInfo.API.Services
                 throw new ArgumentNullException(nameof(user));
             }
 
+            user.EncryptedPassword = BCrypt.Net.BCrypt.HashPassword(user.EncryptedPassword);
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
         }
@@ -28,6 +31,11 @@ namespace CityInfo.API.Services
         public async Task<bool> UserExistsAsync(String email)
         {
             return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<User?> GetUserByIdAsync(int userId)
+        {
+            return await _context.Users.Where(u => u.Id == userId).FirstOrDefaultAsync();
         }
     }
 }

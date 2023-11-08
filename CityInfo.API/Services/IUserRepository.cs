@@ -6,6 +6,8 @@ namespace CityInfo.API.Services
     {
         Task AddUserAsync(User user); 
 
-        public Task<bool> UserExistsAsync(String email);
+        public Task<bool> UserExistsAsync(string email);
+
+        public Task<User?> GetUserByIdAsync(int id);
     }
 }

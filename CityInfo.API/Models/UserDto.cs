@@ -12,5 +12,7 @@
         public string City { get; set; }
 
         public string EncryptedPassword { get; set; }
+
+        public int OrganizationId { get; set; }
     }
 }

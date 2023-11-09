@@ -121,6 +121,18 @@
         <member name="M:CityInfo.API.Migrations.AddEncryptedPasswordToUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:CityInfo.API.Migrations.AddOrganizationModel">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.AddOrganizationModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.AddOrganizationModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.AddOrganizationModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="T:CityInfo.API.Models.CityWithoutPointsOfInterestDto">
             <summary>
             A DTO for a city without points of interest

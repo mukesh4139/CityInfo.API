@@ -7,5 +7,7 @@ namespace CityInfo.API.Services
         public Task AddPostsForUserAsync(int userId, Post post);
 
         public Task<IEnumerable<Post>> GetPostsForUserAsync(int userId);
+
+        public Task<Post?> GetPostById(int postId);
     }
 }

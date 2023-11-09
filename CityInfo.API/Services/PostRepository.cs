@@ -40,7 +40,13 @@ namespace CityInfo.API.Services
             var collection = _context.Posts as IQueryable<Post>;
 
 
-            return await collection.Where(p => p.Id == userId).ToListAsync();
+            return await collection.Where(p => p.UserId == userId).ToListAsync();
+        }
+
+        public async Task<Post?> GetPostById(int postId)
+        {
+            
+            return await _context.Posts.Where(p => p.Id == postId).FirstOrDefaultAsync();
         }
     }
 }

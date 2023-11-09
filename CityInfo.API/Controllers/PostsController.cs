@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using CityInfo.API.Entities;
+using CityInfo.API.Helpers;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -32,19 +34,24 @@ namespace CityInfo.API.Controllers
                 return BadRequest();
             }
             var finalPost = _mapper.Map<Entities.Post>(postDto);
-            //_postRepository.AddPostsForUserAsync(finalPost);
+            await _postRepository.AddPostsForUserAsync(User.GetCurrentUserId(), finalPost);
+            return Ok("Post was saved successfully");
+        }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PostDto>>> GetPosts()
+        {
+            var posts = await _postRepository
+                 .GetPostsForUserAsync(User.GetCurrentUserId());
 
+            return Ok(_mapper.Map<IEnumerable<PostDto>>(posts));
+        }
 
-            //if (userExists.Result == true)
-            //{
-            //    return BadRequest("User already registered");
-            //} else
-            //{
-            //    _userRepository.AddUserAsync(finalUser);
-            //}
-
-            return Ok("Sign up request was successful");
+        [HttpGet("{postId}")]
+        public async Task<ActionResult<PostDto>> GetPost(int postId)
+        {
+            var post = await _postRepository.GetPostById(postId);
+            return Ok(_mapper.Map<PostDto>(post));
         }
     }
 }

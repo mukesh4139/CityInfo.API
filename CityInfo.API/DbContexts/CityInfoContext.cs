@@ -11,6 +11,7 @@ namespace CityInfo.API.DbContexts
         public DbSet<User> Users { get; set; } = null!;
 
         public DbSet<Post> Posts { get; set; } = null;
+        public DbSet<Post> Organizations { get; set; } = null;
 
         public CityInfoContext(DbContextOptions<CityInfoContext> options) : base(options)
         {

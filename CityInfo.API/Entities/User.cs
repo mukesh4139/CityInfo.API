@@ -28,6 +28,7 @@ namespace CityInfo.API.Entities
         public string EncryptedPassword { get; set; }
 
         //[ForeignKey("OrganizationId")]
+        [Required]
         [ForeignKey("OrganizationId")]
         public Organization? Organization { get; set; }
         public int OrganizationId { get; set; }

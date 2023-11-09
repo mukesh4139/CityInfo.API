@@ -133,6 +133,18 @@
         <member name="M:CityInfo.API.Migrations.AddOrganizationModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:CityInfo.API.Migrations.MakeOrganizationIdRequiredInUser">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.MakeOrganizationIdRequiredInUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.MakeOrganizationIdRequiredInUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CityInfo.API.Migrations.MakeOrganizationIdRequiredInUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="T:CityInfo.API.Models.CityWithoutPointsOfInterestDto">
             <summary>
             A DTO for a city without points of interest

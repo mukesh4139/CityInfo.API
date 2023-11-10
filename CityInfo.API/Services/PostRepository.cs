@@ -23,6 +23,7 @@ namespace CityInfo.API.Services
             {
                 throw new ArgumentException("User not found");
             }
+            //  post.UserId = userId;
 
             user.Posts.Add(post);
             await _context.SaveChangesAsync();
@@ -43,8 +44,13 @@ namespace CityInfo.API.Services
             return await collection.Where(p => p.UserId == userId).ToListAsync();
         }
 
-        public async Task<Post?> GetPostById(int postId)
+        public async Task<Post?> GetPostById(int postId, bool includeUser = false)
         {
+            if (includeUser)
+            {
+                return await _context.Posts.Include(c => c.User)
+                    .Where(p => p.Id == postId).FirstOrDefaultAsync();
+            }
             
             return await _context.Posts.Where(p => p.Id == postId).FirstOrDefaultAsync();
         }

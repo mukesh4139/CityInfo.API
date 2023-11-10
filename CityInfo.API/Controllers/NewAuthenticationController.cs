@@ -45,6 +45,7 @@ namespace CityInfo.API.Controllers
             // The claims that
             var claimsForToken = new List<Claim>();
             claimsForToken.Add(new Claim("user_id", user.Result.Id.ToString()));
+            claimsForToken.Add(new Claim("organization_id", user.Result.OrganizationId.ToString()));
             claimsForToken.Add(new Claim("sub", user.Result.Id.ToString()));
             claimsForToken.Add(new Claim("given_name", user.Result.FirstName));
             claimsForToken.Add(new Claim("family_name", user.Result.LastName));
@@ -55,7 +56,7 @@ namespace CityInfo.API.Controllers
                 _configuration["Authentication:Audience"],
                 claimsForToken,
                 DateTime.UtcNow,
-                DateTime.UtcNow.AddHours(1),
+                DateTime.UtcNow.AddHours(100),
                 signingCredentials);
 
             var tokenToReturn = new JwtSecurityTokenHandler()

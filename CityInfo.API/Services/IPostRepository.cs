@@ -8,6 +8,6 @@ namespace CityInfo.API.Services
 
         public Task<IEnumerable<Post>> GetPostsForUserAsync(int userId);
 
-        public Task<Post?> GetPostById(int postId);
+        public Task<Post?> GetPostById(int postId, bool includeUser);
     }
 }

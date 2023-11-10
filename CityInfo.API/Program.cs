@@ -1,6 +1,9 @@
 using CityInfo.API;
+using CityInfo.API.AuthorizationHandlers;
+using CityInfo.API.AuthorizationRequirements;
 using CityInfo.API.DbContexts;
 using CityInfo.API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -99,6 +102,8 @@ builder.Services.AddAuthorization(options =>
         policy.RequireClaim("city", "Antwerp");
     });
 });
+
+builder.Services.AddTransient<IAuthorizationHandler, PostCrudOperationsAuthorizationHandler>();
 
 builder.Services.AddApiVersioning(setupAction =>
 {

@@ -13,5 +13,15 @@ namespace CityInfo.API.Helpers
             }
             return Int32.Parse(userId);
         }
+
+        public static int GetCurrentOrganizationId(this ClaimsPrincipal claimsPrincipal)
+        {
+            string? userId = claimsPrincipal.FindFirstValue("organization_id");
+            if (userId == null)
+            {
+                throw new ArgumentException("Unable to retrieve organization id from auth information");
+            }
+            return Int32.Parse(userId);
+        }
     }
 }
